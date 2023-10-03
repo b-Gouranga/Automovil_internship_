@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.springrest.springrest.dao.boatmanDao;
 import com.springrest.springrest.entities.Boatman;
-import com.springrest.springrest.entities.Ghat;
 
 @Service
 public class boatmanServiceImp implements boatmanService {

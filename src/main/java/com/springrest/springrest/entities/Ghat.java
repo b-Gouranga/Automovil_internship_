@@ -1,5 +1,4 @@
 package com.springrest.springrest.entities;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Data;
@@ -34,7 +33,6 @@ public class Ghat {
 	}
 	public Ghat() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	

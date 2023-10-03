@@ -14,11 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.springrest.springrest.entities.Boat;
 import com.springrest.springrest.entities.Boatman;
-import com.springrest.springrest.entities.Ghat;
 import com.springrest.springrest.entities.User;
 import com.springrest.springrest.services.boatServices;
 import com.springrest.springrest.services.boatmanService;
-import com.springrest.springrest.services.ghatService;
 import com.springrest.springrest.services.userService;
 
 @RestController 
@@ -28,8 +26,7 @@ public class Mycontroller {
 	private userService userservice;
 	@Autowired
 	private boatServices boatservice;
-	@Autowired
-	private ghatService ghatservice;
+	
 	@Autowired
 	private boatmanService boatmanservice;
 	
@@ -94,19 +91,6 @@ public class Mycontroller {
 		return this.boatservice.addBoat(newboat);
 	}
 	
-	//get ghat 
-	@GetMapping("/ghat")
-	public List<Ghat> getghat()
-	{
-		return this.ghatservice.getghat();
-		
-	}
-	
-	@PostMapping(path="/ghat",consumes= "application/json")
-	public Ghat addGhat(@RequestBody Ghat newghat)
-	{
-		return this.ghatservice.addGhat(newghat);
-	}
 	
 	
 	//get boatman
